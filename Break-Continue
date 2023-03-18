@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    while(1)
+    {
+        int a;
+        printf("Enter a number: \n");
+        scanf("%d", &a);
+        if (a >= 0)
+        {
+            printf("Positive Value\n");
+            break;
+            
+        }
+        if (a % 2 == 0)
+        {
+            printf("Negatif Even\n");
+            continue;
+        }
+        printf("%d\n", a);
+    }
+    return 0;
+}
